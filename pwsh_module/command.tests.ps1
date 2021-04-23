@@ -23,7 +23,7 @@ Describe "test bolt module" {
     It "has a valid manifest" {
       # these types of errors  might be caught by the import statement in line 1
       # but check explicitly to be sure for all cases
-      Test-ModuleManifest -Path (Join-Path (Split-Path $PSCommandPath) 'PuppetBolt' 'PuppetBolt.psd1') -ErrorAction Stop
+      Test-ModuleManifest -Path (Join-Path (Split-Path $PSCommandPath) 'PuppetBolt/PuppetBolt.psd1') -ErrorAction Stop
     }
   }
 
